@@ -21,6 +21,7 @@ import {
 } from './components/AdminUI'
 import { cn } from '../../lib/utils/cn'
 import { formatBytes, formatDateTime } from '../../lib/utils/format'
+import { assetUrl } from '../../lib/utils/assets'
 
 const FILTERS = [
   { key: 'all', label: 'All assets' },
@@ -278,7 +279,7 @@ export function AdminMedia() {
                     <div className="relative aspect-[4/3] bg-[#f4f7fa]">
                       {isImage ? (
                         <img
-                          src={asset.url}
+                          src={assetUrl(asset.url)}
                           alt={asset.alt || asset.name}
                           loading="lazy"
                           className="h-full w-full object-cover"
@@ -339,7 +340,7 @@ export function AdminMedia() {
             >
               <div className="overflow-hidden rounded-lg border border-[#eef2f6] bg-[#f4f7fa]">
                 {selected.mime?.startsWith('image/') ? (
-                  <img src={selected.url} alt={selected.alt || ''} className="max-h-48 w-full object-contain" />
+                  <img src={assetUrl(selected.url)} alt={selected.alt || ''} className="max-h-48 w-full object-contain" />
                 ) : (
                   <div className="flex items-center justify-center py-10">
                     <FileText className="h-8 w-8 text-ink-muted/40" strokeWidth={1.3} />

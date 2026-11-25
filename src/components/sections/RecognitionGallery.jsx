@@ -2,6 +2,7 @@ import { ArrowUpRight, Camera } from 'lucide-react'
 import { SectionHeading } from '../common/SectionHeading'
 import { Reveal, RevealGroup, RevealItem } from '../animations/Reveal'
 import { ConceptNote } from '../common/Prose'
+import { assetUrl } from '../../lib/utils/assets'
 
 /**
  * Photographic record of the team's competitions, festivals and visits.
@@ -33,16 +34,17 @@ export function RecognitionGallery({ data }) {
           {items.map((item) => (
             <RevealItem key={item.image} className="h-full">
               <a
-                href={item.image}
+                href={assetUrl(item.image)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex h-full flex-col overflow-hidden rounded-xl border border-hairline bg-white transition-colors duration-500 hover:border-brand-cyan/40"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-navy-950/5">
                   <img
-                    src={item.image}
+                    src={assetUrl(item.image)}
                     alt={item.alt || item.title}
                     loading="lazy"
+                    onError={(e) => { e.currentTarget.style.opacity = '0' }}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                   />
                   <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-ink opacity-0 transition-opacity duration-300 group-hover:opacity-100">

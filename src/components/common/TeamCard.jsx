@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { Link2 } from 'lucide-react'
 import { Mark } from './Logo'
 import { cn } from '../../lib/utils/cn'
+import { assetUrl } from '../../lib/utils/assets'
 
 function initials(name = '') {
   return name
@@ -14,16 +16,18 @@ function initials(name = '') {
 
 /** Animated member profile card. Only rendered for real, supplied profiles. */
 export function TeamCard({ member, index = 0 }) {
-  const hasPhoto = Boolean(member.photoUrl)
+  const [photoFailed, setPhotoFailed] = useState(false)
+  const hasPhoto = Boolean(member.photoUrl) && !photoFailed
 
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-xl border border-hairline bg-white transition-all duration-500 hover:border-brand-cyan/35 hover:shadow-[0_28px_60px_-38px_rgba(8,24,43,0.45)]">
       <div className="relative aspect-[4/3.4] overflow-hidden bg-navy-900">
         {hasPhoto ? (
           <img
-            src={member.photoUrl}
+            src={assetUrl(member.photoUrl)}
             alt={member.name ? `Portrait of ${member.name}` : ''}
             loading="lazy"
+            onError={() => setPhotoFailed(true)}
             className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
           />
         ) : (
@@ -83,7 +87,13 @@ export function TeamRow({ member, className = '' }) {
     <div className={cn('flex items-center gap-4', className)}>
       <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full bg-navy-900">
         {member.photoUrl ? (
-          <img src={member.photoUrl} alt="" loading="lazy" className="h-full w-full object-cover" />
+          <img
+            src={assetUrl(member.photoUrl)}
+            alt=""
+            loading="lazy"
+            onError={(e) => { e.currentTarget.style.display = 'none' }}
+            className="h-full w-full object-cover"
+          />
         ) : (
           <span className="flex h-full w-full items-center justify-center text-[0.7rem] font-medium text-white/50">
             {initials(member.name)}

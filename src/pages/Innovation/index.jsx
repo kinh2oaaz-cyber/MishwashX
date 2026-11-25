@@ -11,6 +11,7 @@ import { ArchitectureDiagram } from '../../components/scientific/ArchitectureDia
 import { StatusBadge } from '../../components/common/StatusBadge'
 import { usePageMeta } from '../../hooks/usePageMeta'
 import { cn } from '../../lib/utils/cn'
+import { assetUrl } from '../../lib/utils/assets'
 
 /* --------------------------------- overview -------------------------------- */
 
@@ -183,7 +184,7 @@ function HardwareSection({ data }) {
                 <div className="relative aspect-[16/10] overflow-hidden border-b border-hairline bg-navy-950">
                   {item.imageUrl ? (
                     <img
-                      src={item.imageUrl}
+                      src={assetUrl(item.imageUrl)}
                       alt={item.title}
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"

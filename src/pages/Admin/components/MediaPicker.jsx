@@ -4,6 +4,7 @@ import { useContent } from '../../../content/ContentProvider'
 import { AdminButton, Alert } from './AdminUI'
 import { cn } from '../../../lib/utils/cn'
 import { formatBytes } from '../../../lib/utils/format'
+import { assetUrl } from '../../../lib/utils/assets'
 
 /**
  * Media library picker. Images are selected from the library, uploaded
@@ -122,7 +123,7 @@ export function MediaPicker({ open, onClose, onSelect, accept = 'image', current
                     >
                       <div className="aspect-[4/3] bg-[#f4f7fa]">
                         {asset.mime?.startsWith('image/') ? (
-                          <img src={asset.url} alt={asset.alt || asset.name} className="h-full w-full object-cover" />
+                          <img src={assetUrl(asset.url)} alt={asset.alt || asset.name} className="h-full w-full object-cover" />
                         ) : (
                           <div className="flex h-full items-center justify-center text-[0.7rem] text-ink-muted">
                             {asset.mime || 'file'}
@@ -175,7 +176,7 @@ export function ImageInput({ value, onChange, label }) {
           )}
         >
           {value ? (
-            <img src={value} alt="" className="h-full w-full object-cover" />
+            <img src={assetUrl(value)} alt="" className="h-full w-full object-cover" />
           ) : (
             <ImagePlus className="h-5 w-5 text-ink-muted/40" strokeWidth={1.4} />
           )}

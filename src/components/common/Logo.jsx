@@ -1,4 +1,5 @@
 import { cn } from '../../lib/utils/cn'
+import { assetUrl } from '../../lib/utils/assets'
 
 /** Mishawash X monogram — two crossing molecular strands forming an X. */
 export function Mark({ className = '', size = 38 }) {
@@ -49,7 +50,7 @@ export function Mark({ className = '', size = 38 }) {
  * consistently across the public site and the content studio.
  */
 export function BrandMark({ brand, size = 38, className = '' }) {
-  const src = brand?.logoUrl || '/images/logo/mishawash-x-logo.jpg'
+  const src = assetUrl(brand?.logoUrl || '/images/logo/mishawash-x-logo.jpg')
   return (
     <img
       src={src}

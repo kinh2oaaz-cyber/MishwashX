@@ -9,6 +9,7 @@ import { EmptyState } from '../../components/common/EmptyState'
 import { TeamCard } from '../../components/common/TeamCard'
 import { TextLink } from '../../components/common/Button'
 import { usePageMeta } from '../../hooks/usePageMeta'
+import { assetUrl } from '../../lib/utils/assets'
 
 /* --------------------------------- mission -------------------------------- */
 
@@ -137,7 +138,7 @@ export default function Team() {
     <Reveal delay={0.2}>
       <figure className="overflow-hidden rounded-xl border border-white/10">
         <img
-          src={hero.groupPhotoUrl}
+          src={assetUrl(hero.groupPhotoUrl)}
           alt={hero.groupPhotoCaption || 'Mishawash X team'}
           className="aspect-[4/3] w-full object-cover"
         />
