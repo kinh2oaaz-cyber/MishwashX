@@ -140,6 +140,8 @@ const localMedia = [
   { name: 'K M Faisal Shahriar', folder: 'team', url: '/images/team/faisal-shahriar.png', alt: 'Portrait of K M Faisal Shahriar', mime: 'image/png', size: 168320 },
   { name: 'Md Masraful Haque Oyone', folder: 'team', url: '/images/team/masraful-haque.png', alt: 'Portrait of Md Masraful Haque Oyone', mime: 'image/png', size: 134933 },
   { name: 'Tamim Iqbal', folder: 'team', url: '/images/team/tamim-iqbal.png', alt: 'Portrait of Tamim Iqbal', mime: 'image/png', size: 106051 },
+  { name: 'Ahnaf Alam Zarif', folder: 'team', url: '/images/team/ahnaf-alam-zarif.jpg', alt: 'Ahnaf Alam Zarif receiving an award', mime: 'image/jpeg', size: 127320 },
+  { name: 'Ahmed Mosaidul Mehran', folder: 'team', url: '/images/team/ahmed-mehran.jpg', alt: 'Portrait of Ahmed Mosaidul Mehran', mime: 'image/jpeg', size: 49119 },
   { name: '3ZERO Leadership Challenge', folder: 'achievements', url: '/images/achievements/3zero-leadership.png', alt: '3ZERO Leadership Challenge recognition', mime: 'image/png', size: 2869921 },
   { name: 'Al Khwarizmi Science Fest', folder: 'achievements', url: '/images/achievements/al-khwarizmi.png', alt: 'Al Khwarizmi Science Fest award', mime: 'image/png', size: 3390906 },
   { name: 'BGB Award', folder: 'achievements', url: '/images/achievements/bgb-award.png', alt: 'BGB Award, Dhaka', mime: 'image/png', size: 3016710 },

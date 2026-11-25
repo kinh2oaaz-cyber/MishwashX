@@ -33,8 +33,6 @@ jobs:
 
       - name: Build site
         env:
-          # Project sites need /<repo>/. For a user site or custom domain,
-          # create a repository variable VITE_BASE_PATH with the value "/".
           VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || format('/{0}/', github.event.repository.name) }}
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}

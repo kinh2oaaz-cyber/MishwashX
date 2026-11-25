@@ -1414,7 +1414,7 @@ export const seedTeam = [
     responsibilities: 'Financial management, budgeting, resource allocation, funding strategy, financial reporting',
     bio: 'Ahmed Mosaidul Mehran serves as the Chief Financial Officer of Mishawash X, overseeing all financial operations including budgeting, resource allocation, and funding strategy. With a background in competitive science and leadership through BNMPC Boys Scout and Science Club, he brings analytical rigor to financial planning. His achievements include multiple Science Olympiad placements (2nd and 3rd), 1st place in Extempore Speech, and participation in NDC English Carnival, Gaming Contest (Runner-up), and I4N. He has contributed to the WALL-E PROJECT and applies his competitive experience to ensure Mishawash X maintains financial discipline while pursuing ambitious aerospace and biomedical engineering goals.',
     contribution: 'CFO of Mishawash X - Financial strategy, budgeting, funding, resource allocation, financial reporting',
-    photoUrl: '',
+    photoUrl: '/images/team/ahmed-mehran.jpg',
     links: [
       { label: 'Email', url: 'mailto:mehranmosaidul@gmail.com' }
     ],
@@ -1428,7 +1428,7 @@ export const seedTeam = [
     responsibilities: 'Web development, IT systems, technical documentation, research support, competition preparation',
     bio: 'Ahnaf Alam Zarif is a Web Developer and Team Member of Mishawash X. He works in IT, building and maintaining the team\'s web presence and supporting the digital systems behind its projects. Alongside his development work, he is taking cybersecurity courses from Cisco Networking Academy, and he contributes to research support, technical documentation and competition preparation.',
     contribution: 'IT of Mishawash X - Web development, website and digital systems, cybersecurity training (Cisco Networking Academy), technical documentation',
-    photoUrl: '',
+    photoUrl: '/images/team/ahnaf-alam-zarif.jpg',
     links: [
       { label: 'Email', url: 'mailto:kinh2oaaz@gmail.com' },
     ],
