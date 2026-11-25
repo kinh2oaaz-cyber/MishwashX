@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Mishawash X — Protirodh BioKit">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2139"/>
+      <stop offset="1" stop-color="#061322"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#24C6B1" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#24C6B1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FE3D4"/>
+      <stop offset="1" stop-color="#087EAA"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="930" cy="230" r="330" fill="url(#glow)"/>
+
+  <g opacity="0.85">
+    <g fill="none" stroke="url(#strand)" stroke-width="4" stroke-linecap="round" transform="translate(880 120)">
+      <path d="M0 24c120 42 120 104 0 146s-120 104 0 146" />
+      <path d="M132 24c-120 42-120 104 0 146s120 104 0 146" />
+    </g>
+    <g stroke="#7FE3D4" stroke-width="2" stroke-linecap="round" opacity="0.5" transform="translate(880 120)">
+      <path d="M20 58h92M8 104h116M8 212h116M20 258h92M8 160h116"/>
+    </g>
+  </g>
+
+  <g transform="translate(88 96)">
+    <rect width="34" height="4" rx="2" fill="#24C6B1"/>
+    <text x="52" y="5" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="16" letter-spacing="4.2" fill="#7FE3D4" font-weight="600">
+      MISHWASH X · CONRAD CHALLENGE 2026–2027
+    </text>
+  </g>
+
+  <g font-family="'Manrope', Inter, sans-serif" fill="#ffffff">
+    <text x="88" y="260" font-size="74" font-weight="300" letter-spacing="-2.4">Redefining access</text>
+    <text x="88" y="342" font-size="74" font-weight="300" letter-spacing="-2.4" fill="#7FE3D4">to cancer diagnostics.</text>
+    <text x="88" y="410" font-size="22" font-weight="400" fill="#ffffff" fill-opacity="0.55" letter-spacing="0.2">
+      Protirodh BioKit — a CRISPR-Cas12a diagnostic platform concept
+    </text>
+  </g>
+
+  <g font-family="Inter, sans-serif" font-size="15" letter-spacing="2.4" fill="#ffffff" fill-opacity="0.38">
+    <text x="88" y="545">CONCEPT-STAGE RESEARCH · NOT A VALIDATED MEDICAL DEVICE</text>
+  </g>
+
+  <rect x="88" y="500" width="120" height="1" fill="#ffffff" fill-opacity="0.15"/>
+  <text x="88" y="592" font-family="Inter, sans-serif" font-size="17" fill="#ffffff" fill-opacity="0.45" letter-spacing="0.4">Mishawash X · Biomedical Technology</text>
+</svg>

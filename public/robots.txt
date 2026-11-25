@@ -1,0 +1,9 @@
+# Mishawash X — robots policy
+# The public site is fully crawlable. The admin dashboard lives behind a hash
+# route (#/admin) and is protected by authentication; crawlers cannot index it.
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Replace the host below with the deployed domain before publishing.
+Sitemap: https://example.github.io/sitemap.xml

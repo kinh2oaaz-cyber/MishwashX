@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mishawash X">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2139"/>
+      <stop offset="1" stop-color="#08182B"/>
+    </linearGradient>
+    <linearGradient id="strand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FE3D4"/>
+      <stop offset="0.55" stop-color="#24C6B1"/>
+      <stop offset="1" stop-color="#087EAA"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="#ffffff" stroke-opacity="0.1"/>
+  <g fill="none" stroke="url(#strand)" stroke-width="2.4" stroke-linecap="round">
+    <path d="M22 14c14 6 14 16 0 22s-14 16 0 22" transform="translate(10 -4)"/>
+    <path d="M42 14c-14 6-14 16 0 22s14 16 0 22" transform="translate(-10 -4)"/>
+  </g>
+  <g stroke="#7FE3D4" stroke-width="1.5" stroke-linecap="round" opacity="0.75">
+    <path d="M24 20h16M21 27h22M21 37h22M24 44h16"/>
+  </g>
+</svg>

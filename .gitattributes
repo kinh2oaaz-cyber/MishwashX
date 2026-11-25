@@ -1,0 +1,9 @@
+# Normalise line endings so the repo behaves the same on Windows, macOS and CI.
+* text=auto eol=lf
+
+# Binary assets — never modify or diff as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.svg text eol=lf
